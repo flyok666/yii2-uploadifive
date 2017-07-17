@@ -1,25 +1,26 @@
 # yii2-uploadifive
-composer.json
+===
+
+## composer.json
+---
+```json
 
 "require": {
-    "xj/yii2-uploadify-widget": "~2.0.0"
+    "flyok666/yii2-uploadifive": "~1.0.0"
 },
+```
 
-"require": {
-    "xj/yii2-uploadify-widget": "~1.0.0"
-},
+## example:
 
-example:
-
-
-
+---
+```php
 //Remove Events Auto Convert
 
 use yii\web\JsExpression;
 
 //外部TAG
 echo Html::fileInput('test', NULL, ['id' => 'test']);
-echo Uploadify::widget([
+echo Uploadifive::widget([
     'url' => yii\helpers\Url::to(['s-upload']),
     'id' => 'test',
     'csrf' => true,
@@ -46,14 +47,13 @@ EOF
 ),
     ]
 ]);
-
+```
 
 
 Action:
-
-version 2.0
-
-use xj\uploadify\UploadAction;
+---
+```php
+use flyok666\uploadifive\UploadAction;
 
 public function actions() {
     return [
@@ -101,3 +101,4 @@ public function actions() {
         ],
     ];
 }
+```
