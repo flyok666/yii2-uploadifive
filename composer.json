@@ -1,0 +1,13 @@
+{
+    "name": "flyok666/yii2-uploadfive",
+    "description": "yii2-uploadfive",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "flyok666",
+            "email": "flyok666@126.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
