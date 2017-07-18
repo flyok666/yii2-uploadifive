@@ -39,7 +39,7 @@ Released under the UploadiFive Standard License <http://www.uploadify.com/upload
                 var settings = $data.settings = $.extend({
                     'auto'            : true,               // Automatically upload a file when it's added to the queue
                     'buttonClass'     : false,              // A class to add to the UploadiFive button
-                    'buttonText'      : 'Select Files',     // The text that appears on the UploadiFive button
+                    'buttonText'      : '选择文件',     // The text that appears on the UploadiFive button
                     'checkScript'     : false,              // Path to the script that checks for existing file names 
                     'dnd'             : true,               // Allow drag and drop into the queue
                     'dropTarget'      : false,              // Selector for the drop target
