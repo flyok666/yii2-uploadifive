@@ -19,8 +19,8 @@
 use yii\web\JsExpression;
 
 //外部TAG
-echo Html::fileInput('test', NULL, ['id' => 'test']);
-echo Uploadifive::widget([
+echo \yii\bootstrap\Html::fileInput('test', NULL, ['id' => 'test']);
+echo \flyok666\uploadifive\Uploadifive::widget([
     'url' => yii\helpers\Url::to(['s-upload']),
     'id' => 'test',
     'csrf' => true,
@@ -28,7 +28,7 @@ echo Uploadifive::widget([
     'jsOptions' => [
         'width' => 120,
         'height' => 40,
-        'onUploadError' => new JsExpression(<<<EOF
+        'onError' => new JsExpression(<<<EOF
 function(file, errorCode, errorMsg, errorString) {
     console.log('The file ' + file.name + ' could not be uploaded: ' + errorString + errorCode + errorMsg);
 }
