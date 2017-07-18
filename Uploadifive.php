@@ -95,8 +95,8 @@ class Uploadifive extends InputWidget
     {
         $baseUrl = $assets->baseUrl;
 
-        $this->jsOptions['uploader'] = $this->url;
-        $this->jsOptions['swf'] = $baseUrl . '/uploadify.swf';
+        $this->jsOptions['uploadScript'] = $this->url;
+        //$this->jsOptions['swf'] = $baseUrl . '/uploadify.swf';
 
     }
 
