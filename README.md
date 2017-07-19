@@ -35,7 +35,7 @@ function(file, errorCode, errorMsg, errorString) {
 }
 EOF
 ),
-        'onUploadSuccess' => new JsExpression(<<<EOF
+        'onUploadComplete' => new JsExpression(<<<EOF
 function(file, data, response) {
     data = JSON.parse(data);
     if (data.error) {
